@@ -2,6 +2,12 @@ int w, h;
 float x, y, x1, y1;
  
 void setup(){
+  dots = new ArrayList<myDot>();
+  w = int(random(20, 40)); h = int(random(20, 40));
+  x = int(random(20, 400)); y = int(random(20, 200));
+  for(int i = 0; i < numDots; i++){
+    myDot dot = new myDot(x, y, w, h);
+  }
   size(1900, 500);
   background(255);
   colorMode(HSB);
