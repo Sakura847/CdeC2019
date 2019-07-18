@@ -1,0 +1,20 @@
+int x, y, WallLocation, Xvel;
+
+void setup(){
+  x = 30; y = 90;
+  WallLocation = 1500;
+  Xvel = 5;
+  size(1500, 1500);
+  background(0);
+}
+
+
+
+void draw(){
+  background(0);
+  fill(255);
+  ellipse(x, y, 30, 30); 
+  x+= Xvel;
+  if(x >= WallLocation){
+    
+}
